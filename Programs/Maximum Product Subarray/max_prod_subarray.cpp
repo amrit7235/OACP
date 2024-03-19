@@ -15,6 +15,9 @@ int maxProduct(vector<int> &nums)
 {
 
     int n = nums.size();
+    if(n == 0){
+        return 0;
+    }
 
     int pre = 1;
     int suf = 1;
@@ -56,13 +59,20 @@ void solve()
 
 int main()
 {
-    ll t;
-    t = 1;
-    cin >> t;
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
+#ifndef ONLINE_JUDGE
+   freopen("input.txt","r",stdin);
+   freopen("output.txt","w",stdout);
+   
+#endif 
+    // int t = 1 ;
 
-
-    while (t--)
-    {
+    int t = 1;
+    // cin >> t;
+ 
+    while (t--){
+        //cout << "Case #" << count << ": ";
         solve();
     }
+    return 0 ;
 }
