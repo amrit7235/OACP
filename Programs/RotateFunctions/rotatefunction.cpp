@@ -54,11 +54,20 @@ void solve(){
 
 
 int main(){
-    int t;
-    t = 1;
-    cin >> t;
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
+#ifndef ONLINE_JUDGE
+   freopen("input.txt","r",stdin);
+   freopen("output.txt","w",stdout);
+   
+#endif 
+    // int t = 1 ;
 
-    while(t--){
+    int t = 1;
+    // cin >> t;
+ 
+    while (t--){
+        //cout << "Case #" << count << ": ";
         solve();
     }
+    return 0 ;
 }
